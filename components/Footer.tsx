@@ -34,7 +34,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5" />
               </Link>
               <Link
-                href="https://netdash-tls.com"
+                href="https://lafeainet-report.vercel.app/"
                 target="_blank"
                 className="text-gray-600 hover:text-gray-900"
               >

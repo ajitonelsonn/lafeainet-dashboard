@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 // Load fonts
 const inter = Inter({
@@ -41,9 +43,11 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${roboto.variable}`}>
       <body className="bg-gray-50 text-gray-900 font-sans antialiased">
         <div className="flex flex-col min-h-screen">
+          <Navigation />
           <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
             {children}
           </main>
+          <Footer />
         </div>
       </body>
     </html>
