@@ -1,5 +1,5 @@
 // components/providers/ProviderCard.tsx
-import { Card, Text } from "@tremor/react";
+import { Text } from "@tremor/react";
 import ProgressBar from "@/components/ui/ProgressBar";
 import { NetworkStats } from "@/types";
 

@@ -57,7 +57,6 @@ interface TrendProps {
 const TrendIndicator = ({
   current,
   previous,
-  suffix = "",
   reversed = false,
 }: TrendProps) => {
   const percentageChange = ((current - previous) / previous) * 100;
