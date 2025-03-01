@@ -356,26 +356,30 @@ export default function Home() {
 
           <Card>
             <Title>Network Speed Distribution</Title>
-            <div className="h-80 mt-4">
-              <Doughnut
-                data={speedChartData}
-                options={{
-                  ...chartOptions,
-                  plugins: {
-                    ...chartOptions.plugins,
-                    tooltip: {
-                      ...chartOptions.plugins.tooltip,
-                      callbacks: {
-                        ...chartOptions.plugins.tooltip.callbacks,
-                        label: (context: any) => {
-                          const provider = providerData[context.dataIndex];
-                          return `Speed: ${provider.rawSpeed.toFixed(0)} Kbps`;
+            <div className="flex justify-center">
+              <div className="h-80 mt-4">
+                <Doughnut
+                  data={speedChartData}
+                  options={{
+                    ...chartOptions,
+                    plugins: {
+                      ...chartOptions.plugins,
+                      tooltip: {
+                        ...chartOptions.plugins.tooltip,
+                        callbacks: {
+                          ...chartOptions.plugins.tooltip.callbacks,
+                          label: (context: any) => {
+                            const provider = providerData[context.dataIndex];
+                            return `Speed: ${provider.rawSpeed.toFixed(
+                              0
+                            )} Kbps`;
+                          },
                         },
                       },
                     },
-                  },
-                }}
-              />
+                  }}
+                />
+              </div>
             </div>
           </Card>
         </div>
