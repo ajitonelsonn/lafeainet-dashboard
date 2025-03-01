@@ -40,7 +40,7 @@ export default function ContactPage() {
                 <div>
                   <span className="text-gray-600">Email:</span>
                   <a
-                    href="mailto:8997ajito@gmail.com"
+                    href="mailto:lafaekaiajito@gmail.com"
                     className="ml-2 text-blue-600 hover:text-blue-800"
                   >
                     lafaekaiajito@gmail.com

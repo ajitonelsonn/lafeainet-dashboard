@@ -61,7 +61,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://netrep-tls.vercel.app/"
+                  href="https://lafeainet-report.vercel.app/"
                   target="_blank"
                   className="text-gray-600 hover:text-blue-600"
                 >

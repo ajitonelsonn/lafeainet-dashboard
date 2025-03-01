@@ -114,6 +114,17 @@ export default function FAQPage() {
                 This FAQ is currently under development and may be updated. Last
                 updated: March 2025
               </p>
+              <p className="text-sm text-red-700">
+                This project submit to{" "}
+                <a
+                  href="https://lablab.ai/event/ai-for-connectivity-hackathon-building-resilient-networks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-red-900"
+                >
+                  AI for Connectivity Hackathon II: Building Resilient Networks
+                </a>
+              </p>
             </div>
           </div>
         </div>

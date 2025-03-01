@@ -209,6 +209,17 @@ export default function Home() {
             <p className="text-gray-600 mt-1">
               Real-time network performance metrics across Timor-Leste
             </p>
+            <p className="text-sm text-red-700">
+              This project submit to{" "}
+              <a
+                href="https://lablab.ai/event/ai-for-connectivity-hackathon-building-resilient-networks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-red-900"
+              >
+                AI for Connectivity Hackathon II: Building Resilient Networks
+              </a>
+            </p>
           </div>
 
           {/* Time Range Filter */}
