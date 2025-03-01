@@ -12,12 +12,12 @@ export default function Footer() {
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              About NetDash TLS
+              About LafeAINet-Dashboard
             </h3>
             <p className="text-gray-600 mb-4">
-              NetDash TLS provides real-time network performance analytics
-              across Timor-Leste, helping users make informed decisions about
-              their network connectivity needs.
+              LafeAINet-Dashboard provides real-time network performance
+              analytics across Timor-Leste, helping users make informed
+              decisions about their network connectivity needs.
             </p>
             <div className="flex space-x-4">
               <Link
@@ -114,7 +114,7 @@ export default function Footer() {
         <div className="border-t border-gray-200 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © {currentYear} NetDash TLS. All rights reserved.
+              © {currentYear} LafeAINet-Dashboard. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-500 text-sm">

@@ -17,7 +17,7 @@ const Navigation = () => {
             <Link href="/" className="flex items-center gap-2">
               <LineChart className="h-6 w-6 text-blue-600" />
               <span className="text-xl font-bold text-gray-900">
-                NetDash TLS
+                LafeAINet-Dashboard
               </span>
             </Link>
           </div>
