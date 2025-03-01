@@ -9,7 +9,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-[1000]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -42,7 +42,7 @@ const Navigation = () => {
               </Link>
 
               <Link
-                href="https://netrep-tls.vercel.app/"
+                href="https://lafeainet-report.vercel.app/"
                 target="_blank"
                 className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2 hover:bg-blue-700 transition-colors"
               >
@@ -95,7 +95,7 @@ const Navigation = () => {
             </Link>
 
             <Link
-              href="https://netrep-tls.vercel.app/"
+              href="https://lafeainet-report.vercel.app/"
               target="_blank"
               className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors"
               onClick={() => setIsMenuOpen(false)}

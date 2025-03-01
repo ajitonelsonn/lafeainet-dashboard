@@ -1,37 +1,23 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-// Load fonts
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const roboto = Roboto({
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
-  variable: "--font-roboto",
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LafeAINet Dashboard | Network Intelligence for Timor-Leste",
+  title: "NetDash TLS - Network Analysis Dashboard",
   description:
-    "Real-time network quality analytics and visualization platform for Timor-Leste telecommunications infrastructure",
+    "Real-time network quality analytics and visualization platform for a telecommunications company in Timor-Leste",
   keywords:
     "network quality, Timor-Leste, connectivity, telecommunications, analytics, dashboard",
   authors: [{ name: "LafeAINet" }],
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
-  themeColor: "#3b82f6",
 };
 
 export default function RootLayout({
@@ -40,13 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto.variable}`}>
-      <body className="bg-gray-50 text-gray-900 font-sans antialiased">
-        <div className="flex flex-col min-h-screen">
-          <Navigation />
-          <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-            {children}
-          </main>
+    <html lang="en">
+      <body className={inter.className}>
+        <Navigation />
+        <div className="min-h-screen flex flex-col">
+          <div className="flex-grow">{children}</div>
           <Footer />
         </div>
       </body>
